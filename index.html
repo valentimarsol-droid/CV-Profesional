@@ -3,40 +3,42 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Currículum Profesional</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>CV Profesional</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
-    <header>
-        <h1>Valentina Quesada</h1>
-        <p>Estudiante de Informática</p>
-        <p>Teléfono: +506 8723-1961</p>
-        <p>Correo: valentimarsol@gmail.com</p>
+    <header class="encabezado">
+        <div class="datos-superiores">
+            <span>Valentina Quesada</span>
+            <span>Tel: +506 8723-1961</span>
+            <span>Correo: valentimarsol@gmail.com</span>
+        </div>
     </header>
 
-    <nav>
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#estudios">Estudios</a>
-        <a href="#habilidades">Habilidades</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
 
-    <main>
+    <main class="cv-contenedor">
 
-        <section id="sobre-mi">
-            <h2>Sobre mí</h2>
-            <p>
-              Técnico en configuración y soporte de redes de comunicación con experiencia en la implementación, mantenimiento 
+        <aside class="columna-izquierda">
+
+            <h1>Valentina Quesada</h1>
+            <p class="subtitulo">
+                Estudiante de Informática
+            </p>
+
+            <section id="sobre-mi">
+                <h2>Sobre mí</h2>
+                <p>
+                   Técnico en configuración y soporte de redes de comunicación con experiencia en la implementación, mantenimiento 
               y resolución de problemas de redes LAN, WAN y sistemas de comunicación. Personas resolutiva, colaborativa, 
               multidisciplinaria, capaz de trabajar bajo presión y con iniciativa. Busco seguir desarrollando mis conocimientos, 
               llegar a ser un apoyo para la empresa en el ámbito tecnológico e ir mejorando mis habilidades. 
-            </p>
-        </section>
+                </p>
+            </section>
 
-        <section id="estudios">
+           <section id="estudios">
             <h2>Estudios Académicos</h2>
             <p><strong>Carrera:</strong> Técnico en Soporte y mantenimiento de equipos, redes y sistemas operativos  </p>
             <p><strong>Institución:</strong> CTP de Dulce Nombre </p>
@@ -46,87 +48,126 @@
             <p><strong>Estado:</strong>  03/2025 – Actualidad |</p>
         </section>
 
-        <section id="habilidades">
-            <h2>Habilidades</h2>
-            <ul>
-                <li>Resolución de problemas</li>
-                <li>Trabajo en equipo</li>
-                <li>Desarrollo de aplicaciones</li>
-                <li>Manejo de bases de datos</li>
-                <li>Comunicación y organización</li>
-            </ul>
+            <section id="habilidades">
+                <h2>Habilidades</h2>
+                <ul>
+                    <li>Resolución de problemas</li>
+                    <li>Trabajo en equipo</li>
+                    <li>Desarrollo de aplicaciones</li>
+                    <li>Manejo de bases de datos</li>
+                    <li>Comunicación y organización</li>
+                </ul>
+            </section>
 
-            <h3>Lenguajes y tecnologías</h3>
-            <ul>
-                <li>Python</li>
-                <li>Java</li>
-                <li>C#</li>
-                <li>HTML y CSS</li>
-                <li>MySQL y SQL Server</li>
-            </ul>
-        </section>
+            <section id="lenguajes">
+                <h2>Lenguajes y tecnologías</h2>
+                <ul>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>C#</li>
+                    <li>HTML y CSS</li>
+                    <li>MySQL y SQL Server</li>
+                </ul>
+            </section>
 
-        <section id="proyectos">
-            <h2>Mis Proyectos</h2>
+        </aside>
 
-            <div class="contenedor-proyectos">
+     
+        <div class="columna-derecha">
 
-                
-                <article class="tarjeta">
+            <section id="proyectos">
+                <h2>Proyectos desarrollados</h2>
+                <p class="subtitulo">
+                    Experiencia práctica en programación
+                </p>
+
+              
+                <article class="tarjeta-proyecto">
                     <h3>Clínica Salud y Bienestar</h3>
-                    <p>
-                        Sistema de reserva de citas para clientes,
-                        desarrollado con Python y HTML.
-                        Permite gestionar las reservaciones
-                        de servicios de una clínica.
+
+                    <p class="tecnologias">
+                        Python | HTML
                     </p>
-                    <a class="boton" href="proyecto1.html">
+
+                    <img
+                        src="imagenes/clinica.png"
+                        alt="Sistema Clínica Salud y Bienestar"
+                        class="imagen-proyecto"
+                    >
+
+                    <p>
+                        Sistema de reserva de citas
+                        para clientes que permite
+                        seleccionar servicios,
+                        fechas y horarios.
+                    </p>
+
+                    <a href="proyecto1.html"
+                       class="boton">
                         Ver proyecto
                     </a>
                 </article>
 
-
-                <article class="tarjeta">
+               
+                <article class="tarjeta-proyecto">
                     <h3>NovaOnline</h3>
-                    <p>
-                        Sistema de gestión de clientes y compras
-                        desarrollado con Python, Java y C#.
+
+                    <p class="tecnologias">
+                        Python | Java | C# | MySQL
                     </p>
-                    <a class="boton" href="proyecto2.html">
+
+                    <img
+                        src="imagenes/novaonline.png"
+                        alt="Sistema NovaOnline"
+                        class="imagen-proyecto"
+                    >
+
+                    <p>
+                        Sistema de gestión de clientes,
+                        compras e inventario, desarrollado
+                        mediante diferentes tecnologías
+                        y comunicación por sockets.
+                    </p>
+
+                    <a href="proyecto2.html"
+                       class="boton">
                         Ver proyecto
                     </a>
                 </article>
+            </section>
 
-            </div>
-        </section>
+           
+            <section id="contacto">
+                <h2>Contacto</h2>
 
-        <section id="contacto">
-            <h2>Contacto</h2>
+                <details>
+                    <summary>Formas de contacto</summary>
 
-            <details>
-                <summary>Formas de contacto</summary>
-                <p>Teléfono: +506 8723-1961</p>
-                <p>
-                    Correo:
-                    <a href="valentimarsol@gmai.com">
-                        valentimarsol@gmail.com
-                    </a>
-                </p>
-                <p>
-                    GitHub:
-                    <a href="https://github.com/" target="_blank"
-                       rel="noopener noreferrer">
-                        Mi perfil de GitHub
-                    </a>
-                </p>
-            </details>
+                    <p>Teléfono: +506 8723-1961</p>
 
-        </section>
+                    <p>
+                        Correo:
+                        <a href="email:valentimarsol@gmail.com">
+                            valentimarsol@gmail.com
+                        </a>
+                    </p>
 
+                    <p>
+                        GitHub:
+                        <a href="https://github.com/"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Mi perfil de GitHub
+                        </a>
+                    </p>
+                </details>
+            </section>
+
+        </div>
     </main>
 
     <footer>
-        <p>© 2026 - Mi Currículum Profesional</p>
+        <p>2026 - CV Profesional</p>
     </footer>
 
 </body>
